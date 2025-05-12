@@ -1,0 +1,1720 @@
+/* Top Bar: Logo, Usuario y Carrito de Compras */
+
+/* ==================================== */
+/*=======FUENTES PARA USAR========*/
+/* ==================================== */
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@600&family=Montserrat:wght@300;700&family=Open+Sans:wght@500;700&family=Roboto+Slab&family=Roboto:ital,wght@0,500;1,300&family=Young+Serif&display=swap');
+/*@import url('../fonts/Zilla_Slab/ZillaSlab-SemiBold.ttf');*/
+/* ==================================== */
+/* ==== END FUENTES PARA USAR========== */
+/* ==================================== */
+
+/* =================================== */
+/* ======= RESETEO Y UTILIDADES =======*/
+/* =================================== */
+:root {
+    --stars-color: #c7a17a;
+    --background-color: #dff6fb;
+    --dark-color: #151515;
+    --icons-color: #ee0432;
+    --navbar-color: #ee0f04;
+    --cont-hero-color: #ffffff;
+    --grad-background: linear-gradient(90deg, rgb(238, 226, 176) 0%, rgb(196, 246, 237) 50%, rgba(238, 226, 176) 100%);
+    --transition: all 2s ease;
+    --primary-color: #007BFF;
+    /* Color primario (azul) */
+    --secondary-color: #6c757d;
+    /* Color secundario (gris) */
+    --dark-color: #343a40;
+    /* Color oscuro */
+    --light-gray-color: #f8f9fa;
+    /* Color gris claro */
+    --accent-color: #FFC107;
+    /* Color de acento (amarillo) */
+    --muted-color: #868e96;
+    /* Color atenuado */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+   /* font-family: 'Zilla Slab', serif;*/
+
+}
+body {
+    margin: 0;
+    font-family: "Orbitron", sans-serif;
+    background-color: #0f0f0f;
+    color: #ffffff;
+/*font-size: 62.5%; font-size: 3.5%;*/
+}
+
+.container {
+    max-width: 100%;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    padding: 3px 10px;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #E1E1E1;
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+th:first-child,
+td:first-child {
+    padding-left: 0;
+}
+
+th:last-child,
+td:last-child {
+    padding-right: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* =================================== */
+/* ===== END RESETEO Y UTILIDADES===== */
+/* =================================== */
+
+/* =================================== */
+/* ========= TITULOS HEADING ========= */
+/* =================================== */
+/* Encabezado de primer nivel */
+.heading-1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #00f2ff;
+    /*font-family: 'AR One Sans', sans-serif;*/
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    animation: fadeInText 1s ease-in-out;
+}
+
+/* Encabezado de segundo nivel */
+.heading-2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #00f2ff;
+    /*font-family: 'AR One Sans', sans-serif;*/
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    animation: fadeInText 1s ease-in-out;
+}
+
+/* Encabezado de tercer nivel */
+.heading-3 {
+    text-align: left;
+    font-weight: 500;
+    font-size: 2rem;
+    color: var(--dark-color);
+    margin: 1rem 0;
+    text-transform: none;
+    letter-spacing: 0.05em;
+    font-family: 'AR One Sans', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    animation: fadeInText 1s ease-in-out;
+}
+
+/* Encabezado de cuarto nivel */
+.heading-4 {
+    text-align: left;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--light-gray-color);
+    margin: 0.5rem 0;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    letter-spacing: 0.05em;
+    font-family: 'AR One Sans', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    animation: fadeInText 1s ease-in-out;
+}
+
+/* Encabezado de quinto nivel */
+.heading-5 {
+    text-align: left;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: var(--muted-color);
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: 'AR One Sans', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    animation: fadeInText 1s ease-in-out;
+}
+
+/* Animación de desvanecimiento del texto */
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =================================== */
+/* ========= TITULOS HEADING ========= */
+/* =================================== */
+
+/* =================================== */
+/*             MAIN CONTENT       */
+/* =================================== */
+.main-content {
+    background-color: #333;
+    width: 100%;
+}
+
+/* =================================== */
+/*        END MAIN CONTENT       */
+/* =================================== */
+
+/* ============================== */
+/*              MENU              */
+/* ============================== */
+.menu-gamer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    background-color: #1f1f1f;
+    box-shadow: 0 0 10px #00f2ff33;
+    border-bottom: 2px solid #00f2ff66;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #00f2ff;
+    letter-spacing: 2px;
+}
+
+/* ============================== */
+/*            NAV LINKS           */
+/* ============================== */
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.4rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding: 0.5rem 0;
+    position: relative;
+    font-size: 1.4rem;
+}
+
+.nav-links a:hover {
+    color: #00f2ff;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #00f2ff;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* ============================== */
+/*            CARRITO             */
+/* ============================== */
+.carrito {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+        font-size: 1.4rem;
+        
+}
+
+.carrito svg {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.carrito:hover svg {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 6px #0ff);
+}
+
+/* ============================== */
+/*           ACCIONES             */
+/* ============================== */
+.acciones {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* ============================== */
+/*           BUSCADOR             */
+/* ============================== */
+.buscador {
+    display: flex;
+    background: #121212;
+    border: 1px solid #00f2ff55;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.buscador input {
+    background: transparent;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    outline: none;
+    width: 180px;
+}
+
+.buscador button {
+    background: #00f2ff;
+    border: none;
+    padding: 0.5rem 0.8rem;
+    color: #0b0c10;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.buscador button:hover {
+    background: #0ff;
+}
+
+/* ============================== */
+/*           LOGIN BTN            */
+/* ============================== */
+.login-btn {
+    background: transparent;
+    color: #00f2ff;
+    border: 1px solid #00f2ff;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+        font-size: 1.4rem;
+}
+
+.login-btn:hover {
+    background: #00f2ff;
+    color: #0b0c10;
+}
+
+/* ============================== */
+/*           ICON BUTTON          */
+/* ============================== */
+.icon-btn {
+    color: #00f2ff;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border: 1px solid #00f2ff55;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-btn:hover {
+    background: #00f2ff;
+    color: #0b0c10;
+    transform: scale(1.05);
+}
+
+/* ============================== */
+/*          END  - HEADER         */
+/* ============================== */
+
+/* ============================== */
+/*             BANNER             */
+/* ============================== */
+
+.banner {
+    background-image: url('../images/Imagenes/light-bulbs-5488573_1280.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #00f2ff;
+    border-bottom: 2px solid red;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+
+.content-banner {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.content-banner h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    /* Color verde tecnológico */
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.content-banner p {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.content-banner a {
+    display: inline-block;
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    color: #000;
+    background-color: #00f2ff;
+    /* Color verde tecnológico */
+    text-transform: uppercase;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+    animation: bounceIn 1.5s ease-in-out;
+}
+
+.content-banner a:hover {
+    background-color: #00f2ff;
+    /* Color verde oscuro para el hover */
+    transform: scale(1.1);
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    0% {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    20% {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    40% {
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+
+    80% {
+        transform: scale3d(0.97, 0.97, 0.97);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+
+
+/* ============================== */
+/*             FEATURES       */
+/* ============================== */
+/* Features Section */
+.container-features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 3rem 2rem;
+    gap: 2rem;
+    /*background-color: #121212;
+    border-top: 2px solid #00f2ff55;
+    border-bottom: 2px solid #00f2ff55;*/
+    max-width: 100%;
+    
+}
+
+.card-feature {
+    background-color: #1f1f1f;
+    border: 1px solid #00f2ff33;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px #00f2ff22;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 250px;
+    /* Asegurar que las tarjetas no sean demasiado anchas */
+    overflow: hidden;
+    width: 300px;
+}
+
+.card-feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-feature i {
+    font-size: 3rem;
+    color: #00f2ff;
+    margin-right: 1.5rem;
+}
+
+.feature-content span {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #FFF;
+}
+
+.feature-content p {
+    font-size: 1.2rem;
+    color: #00f2ff;
+}
+
+/* ============================== */
+/*             CATEGORIES         */
+/* ============================== */
+.top-categories {
+    display: flex;
+    flex-direction: column;
+    font-family: 'AR One Sans', sans-serif;
+    /*align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    width: 100%;*/
+    color: #fff;
+    text-align: center;
+    /*background-color: #0f0f0f;*/
+    border-top: 2px solid #00f2ff44;
+    border-bottom: 2px solid red;
+    /*border-bottom: 2px solid #00f2ff44;*/
+    border-radius: 10PX;
+    margin-bottom: 20px;
+    max-width: 1200px;
+    height: 340px;
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/*
+.container-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+*/
+.container-categories {
+    /*display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    justify-items: center;
+    Centra las tarjetas horizontalmente */
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.card-category {
+    /*
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f1f1f1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);*/
+    width: 265px;
+    height: 175px;
+    margin-top: 50px;
+    aspect-ratio: 4 / 3;
+    /*background: linear-gradient(145deg, #1a1a1a, #121212);*/
+    background: linear-gradient(145deg, #1a1a1a, #121212);
+    border: 1px solid #00f2ff33;
+    border-radius: 16px;
+    padding: 1.5rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #00f2ff22;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-category i {
+    font-size: 3rem;
+    color: red;
+    margin-bottom: .5rem;
+    z-index: 2;
+}
+
+.card-category::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, #00f2ff22 0%, transparent 70%);
+    transform: rotate(25deg);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.card-category:hover::before {
+    opacity: 1;
+}
+
+.card-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #00f2ff55;
+}
+
+.card-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #00f2ff55;
+}
+
+.card-category:hover::before {
+    opacity: 0.2;
+}
+
+.category-portatil-oficina {
+    background-image: url('../images/Categories/office-1734485_1920.jpg');
+    background-repeat: no-repeat;
+    /*background-size: contain;*/
+    background-size: cover;
+    background-position: center;
+    animation: fadeInZoom 1s ease;
+}
+
+.category-escritorio-gamer {
+    background-image: url('/images/Categories/card-5884683_1920.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    animation: fadeInZoom 1.2s ease;
+    background-color: #fff;
+}
+
+.category-partes-accesosrios {
+    background-image: url('../images/Categories/king-2473531_1920.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    animation: fadeInZoom 1.4s ease;
+}
+.category-diseño-web {
+    background-image: url('../images/Categories/data-5606639_1920.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    animation: fadeInZoom 1.4s ease;
+}
+.card-category p {
+    font-size: 2.2rem;
+    color: #00f2ff;
+    text-transform: capitalize;
+    z-index: 2;
+    position: relative;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.card-category span {
+    font-size: 1.6rem;
+    color: #00f2ff;
+    cursor: pointer;
+    font-weight: 700;
+    z-index: 2;
+    position: relative;
+    transition: color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.card-category span:hover {
+    color: red;
+}
+
+.card-category:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes fadeInZoom {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Keyframes for animations */
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff3c2a, 0 0 10px #ff3c2a, 0 0 15px #ff3c2a;
+    }
+
+    50% {
+        text-shadow: 0 0 10px #ff3c2a, 0 0 20px #ff3c2a, 0 0 30px #ff3c2a;
+    }
+
+    100% {
+        text-shadow: 0 0 5px #ff3c2a, 0 0 10px #ff3c2a, 0 0 15px #ff3c2a;
+    }
+}
+
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInZoom {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ============================== */
+/*             CATEGORIES         */
+/* ============================== */
+
+/* ============================== */
+/* ======== TOP PRODUCTS ========  */
+/* ============================== */
+/* Estilo general para la sección de nuevos productos */
+.top-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    width: 100%;
+    /*background-color: #0f0f0f;*/
+        border-top: 2px solid #00f2ff44;
+       /* border-bottom: 2px solid #00f2ff44;*/
+            border-bottom: 2px solid red;
+            border-radius: 5px;
+    text-align: center;
+
+}
+/*
+.top-products {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #333;
+    font-family: 'AR One Sans', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    animation: fadeInText 1s ease-in-out;
+}
+*/
+/* Contenedor de opciones de menú */
+.container-options {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Estilo para el menú de opciones */
+.menu-options {
+    /*background: rgba(255, 255, 255, 0.8);*/
+    background-color: #0f0f0f;
+    border-top: 2px solid #00f2ff44;
+    border-bottom: 2px solid #00f2ff44;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.menu-options li {
+    list-style: none;
+    margin: 0;
+}
+
+.menu-options li a {
+    padding: 1rem 2rem;
+    display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: red;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+.menu-options li:hover a,
+.menu-options .active a {
+    background-color: #333;
+    color: #fff;
+}
+
+.menu-options li a:hover::after {
+    opacity: 1;
+}
+
+/* Animación para el texto */
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efecto de sombra sutil */
+.menu-options li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #333;
+    transition: width 0.3s;
+}
+
+.menu-options li a:hover::after {
+    width: 100%;
+}
+/* =============================== */
+/* ===== END TOP PRODUCTS ======== */
+/* =============================== */
+
+/* =============================== */
+/* ==========  PRODUCTS ==========*/
+/* =============================== */
+.container-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+    /*background-color: #0f0f0f;
+    /*border-top: 2px solid #00f2ff44;
+    border-bottom: 2px solid #00f2ff44;*/
+    padding: 5px;
+    width: 100%;
+
+}
+
+.card-product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fafafa;
+    font-size: 1rem;
+    color: red;
+    padding: 20px;
+}
+
+.card-product:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.container-img {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.container-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.discount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+.button-group {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.button-group button {
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 0.8rem;
+}
+
+.button-group button:hover {
+    background-color: #eee;
+    transform: scale(1.1);
+}
+
+.stars {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 5px;
+    /* Espacio entre estrellas y precio */
+}
+
+.stars i {
+    color:red;
+    transition: transform 0.2s ease;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.stars i:hover {
+    transform: scale(1.2);
+}
+
+.content-card-product {
+    padding: 10px;
+}
+
+.product-price {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #212121;
+}
+
+.product-discount {
+    color: #757575;
+    text-decoration: line-through;
+    font-size: 0.9rem;
+}
+
+.content-card-product-description {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.product-description {
+    margin: 0;
+    /* Eliminar margen por defecto */
+}
+.add-cart {
+    background-color: #000;
+    /* Color de fondo */
+    color: white;
+    /* Color del texto */
+    border: none;
+    /* Sin borde */
+    padding: 15px 16px;
+    /* Espaciado interno */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.1s ease, transform 0.2s ease, box-shadow 0.3s ease, color 0.3s ease;
+    /* Transiciones suaves */
+    font-size: 1rem;
+    /* Tamaño de texto */
+    text-transform: uppercase;
+    /* Texto en mayúsculas */
+    width: 100%;
+    /* Ancho completo */
+    margin-top: 10px;
+    /* Margen superior */
+    font-weight: 700;
+    /* Peso de fuente */
+    position: relative;
+    /* Para posicionar el pseudo-elemento */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra del botón */
+}
+
+/* Efecto al pasar el mouse */
+.add-cart:hover {
+    background-color: #333;
+    /* Cambio de color de fondo al pasar el mouse *
+    transform: scale(1.05) rotate(2deg);
+    /* Escala del botón y ligera rotación *
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    /* Sombra más intensa */
+}
+
+/* Efecto de subrayado con pseudo-elemento */
+.add-cart::after {
+    content: '';
+    display: block;
+    /* Muestra el pseudo-elemento */
+    width: 1;
+    /* Ancho inicial */
+    height: 3px;
+    /* Altura de la línea */
+    background: #fff;
+    /* Color de la línea */
+    transition: width 0.1s;
+    /* Transición del ancho */
+    position: absolute;
+    /* Posición relativa al botón */
+    bottom: 5px;
+    /* Ubicación inferior */
+    left: 50%;
+    /* Centrado horizontal */
+    transform: translateX(-50%);
+    /* Ajuste de la posición */
+}
+
+/* Efecto de subrayado al pasar el mouse */
+.add-cart:hover::after {
+    width: 100%;
+    /* Ancho completo al pasar el mouse */
+}
+
+/* Efecto de pulsación */
+.add-cart:active {
+    transform: scale(0.1);
+    /* Escala al hacer clic */
+}
+
+/* Cambio de color de texto al pasar el mouse */
+.add-cart:hover {
+    color: #Ffff;
+    /* Cambia el color del texto al pasar el mouse */
+}
+
+
+/* Efecto de deslizamiento */
+.add-cart {
+    position: relative;
+    /* Necesario para el pseudo-elemento */
+}
+
+.add-cart::before {
+    content: '';
+    position: absolute;
+    /*background-color: rgba(255, 255, 255, 0.2);
+    /* Color del deslizamiento */
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    /* Comienza fuera del botón */
+    top: 0;
+    transition: left 0.3s;
+    /* Transición suave */
+    z-index: 0;
+    /* Asegúrate de que quede detrás del texto */
+}
+
+.add-cart:hover::before {
+    left: 0;
+    /* Desliza el efecto al pasar el mouse */
+}
+
+.add-cart span {
+    position: relative;
+    /* Necesario para posicionar el texto por encima del pseudo-elemento */
+    z-index: 1;
+    /* Asegúrate de que el texto quede delante */
+}
+
+/* =============================== */
+/* ========== END PRODUCTS ========*/
+/* =============================== */
+
+/* ============================== */
+/*            GALLERY             */
+/* ============================== */
+/*
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 30rem);
+    max-width: 100%;
+    /* Ajusta el ancho máximo según tus necesidades *
+    margin: 0 auto;
+    /*Centra la galería en el contenedor *
+    padding: 5rem;
+    /* Agrega un relleno para dar espacio alrededor *
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    background: var(--grad-background);
+}*/
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 30rem);
+    max-width: 100%;
+    /* Ajusta el ancho máximo según tus necesidades */
+    margin: 0 auto;
+    /*Centra la galería en el contenedor */
+    padding: 5rem;
+    /* Agrega un relleno para dar espacio alrededor */
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    background: var(--grad-background);
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-img-3 {
+    grid-column: 2/4;
+    grid-row: 1/3;
+}
+
+
+/* ============================== */
+/*            SPECIALS            */
+/* ============================== */
+
+.specials {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* ============================== */
+/*            BLOG                */
+/* ============================== */
+.blogs {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.container-blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+/* .card-blog{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.card-blog .container-img{
+    border-radius: 2rem;
+
+} */
+
+.card-blog {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.container-img {
+    margin: 10px;
+}
+
+.card-blog .container-img {
+    border-radius: 2rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    max-height: 300px;
+    width: auto;
+    object-fit: cover;
+}
+
+.button-group-blog {
+    position: absolute;
+    bottom: 1.5rem;
+    right: -2.5rem;
+    display: flex;
+    gap: 0.7rem;
+    z-index: -1;
+    transition: all .3s ease;
+}
+
+.card-blog:hover .button-group-blog {
+    z-index: 0;
+    right: 1.5rem;
+}
+
+.button-group-blog span {
+    background-color: var(--background-color);
+    padding: 1rem;
+    border-radius: 50%;
+    transition: all .4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -50px;
+
+}
+
+.button-group-blog span i {
+    font-size: 1.3rem;
+}
+
+.button-group-blog span:hover {
+    background-color: var(--stars-color);
+}
+
+.button-group-blog span:hover i {
+    color: var(--cont-hero-color);
+}
+
+.content-blog h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.7rem;
+    font-weight: 500;
+    color: var(--dark-color);
+    height: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.content-blog h3:hover {
+    color: var(--stars-color);
+    cursor: pointer;
+}
+
+.content-blog p {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color: var(--dark-color);
+
+}
+
+.content-blog span {
+    color: var(--stars-color);
+    font-size: 1.3rem;
+
+}
+
+.btn-read-more {
+    padding: 1rem 3rem;
+    background-color: var(--background-color);
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    margin: 3rem 0 5rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.btn-read-more:hover {
+    background-color: var(--stars-color);
+}
+
+/* ============================== */
+/*            FOOTER              */
+/* ============================== */
+.footer {
+    background: var(--grad-background);
+    overflow: hidden;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 3rem;
+}
+
+.menu-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)30rem;
+    gap: 3rem;
+    justify-items: center;
+}
+
+.title-footer {
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.contact-info,
+.information,
+.my-account,
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-info ul,
+.information ul,
+.my-account ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.contact-info ul li,
+.information ul li,
+.my-account ul li {
+    font-size: 1.4rem;
+    color: var(--dark-color);
+    font-weight: 300;
+}
+
+.my-account ul li a,
+.information ul li a {
+    color: var(--dark-color);
+    font-weight: 300;
+}
+
+.my-account ul li a:hover,
+.information ul li a:hover {
+    color: var(--stars-color);
+}
+
+.my-account .title-footer {
+    font-weight: 300;
+    text-align: center;
+    font-weight: 600;
+}
+
+.my-account .nav-footer li {
+    text-align: center;
+    /* background: #45a049; */
+    padding: 1rem 2rem;
+
+}
+
+.my-account .nav-footer li a {
+    color: #151515;
+    font-size: 1.2rem;
+}
+
+.my-account .nav-footer li:hover {
+    background: var(--stars-color);
+
+
+}
+
+.my-account .nav-footer li:hover a {
+    color: var(--cont-hero-color);
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-icons span {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons span i {
+    color: var(--dark-color);
+    font-size: 1.2rem;
+}
+
+.facebook {
+    background: var(--stars-color);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.youtube {
+    background: var(--stars-color);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.twitter {
+    background: var(--stars-color);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.instagram {
+    background: var(--stars-color);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.facebook:hover {
+    background: var(--background-color);
+}
+
+.youtube:hover {
+    background: var(--background-color);
+}
+
+.twitter:hover {
+    background: var(--background-color);
+}
+
+.instagram:hover {
+    background: var(--background-color);
+}
+
+.content p {
+    font-size: 1.4rem;
+    color: var(--dark-color);
+
+}
+
+.content input {
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--icons-color);
+    cursor: pointer;
+    padding: 0.5rem 0 1.2rem;
+    color: var(--dark-color);
+    display: block;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    width: 100%;
+    font-family: inherit;
+}
+
+.content input::-webkit-input-placeholder {
+    color: var(--icons-color);
+}
+
+.content button {
+    border: none;
+    background: var(--background-color);
+    color: var(--dark-color);
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 2s ease;
+}
+
+.content button:hover {
+    background: var(--stars-color);
+    color: var(--cont-hero-color);
+}
+
+.copyrigth {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    border-top: 1px solid var(--icons-color);
+}
+
+.copyrigth p {
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.copyrigth img {
+    width: 250px;
+}
+
+/* ============================== */
+/*            REGISTRO            */
+/* ============================== */
+/* Estilo para el contenedor principal del formulario */
+.form-container {
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: red;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el encabezado del formulario */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Estilo para los campos de entrada de texto */
+.form-content label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.form-content input[type="text"],
+.form-content input[type="number"],
+.form-content textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilo para el botón de agregar producto */
+.form-content button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estilo para el botón de agregar producto al pasar el mouse por encima */
+.form-content button:hover {
+    background-color: #45a049;
+}
+
+
+
+/* Estilo para el formulario en dispositivos móviles */
+@media screen and (max-width: 480px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    .form-content label {
+        font-size: 14px;
+    }
+
+    .form-content button {
+        font-size: 14px;
+    }
+}
+
+
+/* ============================== */
+/*       MEDIA QUERIES --768      */
+/* ============================== */
+@media(max-width:768px) {
+    html {
+        font-size: 55%;
+    }
+
+    .hero {
+        padding: 2rem;
+    }
+
+    .custumer-support {
+        display: none;
+    }
+
+    .navbar {
+        padding: 1rem 2rem;
+    }
+
+    .navbar .fa-bars {
+        display: block;
+        color: var(--stars-color);
+        font-size: 3rem;
+    }
+
+    .content-banner {
+        max-width: 50rem;
+        margin: 0 auto;
+        padding: 25rem 0;
+    }
+
+    .container-features {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3rem 2rem;
+    }
+
+    .card-feature {
+        padding: 2rem;
+    }
+
+    .heading-1,.heading-2,
+    .heading-3,.heading-4,
+    .heading-5,.heading-6,
+    .heading-7 {
+        font-size: 2.4rem;
+    }
+
+    .container-categories {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 1.5rem;
+    }
+
+    .card-category {
+
+        height: 11rem;
+        border-radius: 1rem;
+        /* margin: auto; */
+        background: var(--stars-color);
+    }
+
+    .card-category p {
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 1;
+        font-weight: 600;
+    }
+
+    .card-category span {
+        font-size: 1.4rem;
+    }
+
+    .container-options {
+        align-items: center;
+        display: inline-block;
+    }
+
+    .container-options span {
+        padding: 3rem 1rem;
+        text-align: center;
+
+    }
+}
+
+/* ============================== */
+/*       MEDIA QUERIES --468     */
+/* ============================== */

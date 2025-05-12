@@ -1,0 +1,10 @@
+                            <?php
+                                // Ruta absoluta en el sistema local de Windows
+                                $rutaImagen = "C:/xampp/htdocs/usados.com/images/ImagenesProductos/Portatiles/Hp/240G7/168868000-1-255G7.jpg" . $row['marca'] . "/" . $row['modelo'] . "/170058000-" . $row['modelo'] . ".jpg";
+                                // Mostrar la imagen si existe en la ruta especificada
+                                if (file_exists($rutaImagen)) {
+                                    echo "<img src='$rutaImagen' alt='Imagen de producto'><br>";
+                                } else {
+                                    echo "Imagen no disponible";
+                                }
+                                ?>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Página de Administración</title>
+    <link rel="stylesheet" href="./css/styles3.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Administacion</h1>
+        </div>
+
+    </header>
+    <div class="form-container">
+        <h2>Agregar Producto</h2>
+        <form id="nuevo-producto-form">
+            <div class="form-content">
+                <label for="nombre">Nombre del producto:</label>
+                <input type="text" id="nombre" required>
+            </div>
+
+            <div class="form-content">
+                <label for="descripcion">Descripción del producto:</label>
+                <textarea id="descripcion" required></textarea>
+            </div>
+
+            <div class="form-content">
+                <label for="precio">Precio del producto:</label>
+                <input type="text" id="precio" required >
+            </div>
+
+            <div class="form-content">
+                <label for="imagen">Subir imagen del producto:</label>
+                <input type="file" id="imagen" accept="image/*" required><br>
+            </div>
+
+            <div class="form-content">
+                <button type="submit">Agregar Producto</button>
+            </div>
+        </form>
+    </div>
+    <script src="/js/app.js"></script>
+    <script>
+        // Agrega un listener para el evento "input" en el campo de precio
+        document.getElementById('precio').addEventListener('input', function (e) {
+            const input = e.target;
+            const inputValue = input.value;
+    
+            // Elimina cualquier caracter no numérico o punto (.)
+            const cleanedValue = inputValue.replace(/[^0-9.]/g, '');
+    
+            // Garantiza que solo haya un punto decimal
+            const decimalCount = cleanedValue.split('.').length - 1;
+            if (decimalCount > 1) {
+                const parts = cleanedValue.split('.');
+                cleanedValue = parts[0] + '.' + parts.slice(1).join('');
+            }
+    
+            // Establece el valor limpio de nuevo en el campo de entrada
+            input.value = cleanedValue;
+        });
+    </script>
+    
+</body>
+</html>
+<div class="container-cart">
+    <button class="cart-btn">
+        <span></span>
+        <span>
+            <i class="bi bi-cart"></i>
+        </span>
+        <small class="cart-qty">0</small>
+    </button>
+    <div class="cart-header">
+        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        <h2>Mis Compras</h2>
+    </div>
+    <div class="cart-body">
+        <table id="cart-list">
+            <thead>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div class="cart-footer">
+        <div>
+            <strong>Total</strong>
+            <span class="cart-total">0</span>
+        </div>
+        <div class="button-card-footer">
+            <button class="cart-clear">Vaciar Carrito</button>
+            <button class="Checkout">Checkout</button>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container-hero">
+    <div class="container hero">
+        <div class="custumer-support">
+            <i class="fa-solid fa-headset"></i>
+            <div class="content-custumer-support">
+                <span class="text">Soporte al Cliente</span>
+                <span class="number">123-111-445-77</span>
+            </div>
+        </div>
+        <div class="container-logo">
+            <h1><a href="/">USADOS.COM</a></h1>
+        </div>
+        <div class="container-cart">
+            <button class="cart-btn">
+                <span></span>
+                <span>
+                    <i class="bi bi-cart"></i>
+                </span>
+                <small class="cart-qty">0</small>
+            </button>
+            <div class="cart-header">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <h2>Mis Compras</h2>
+            </div>
+            <div class="cart-body">
+                <table id="cart-list">
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="cart-footer">
+                <div>
+                    <strong>Total</strong>
+                    <span class="cart-total">0</span>
+                </div>
+                <div class="button-card-footer">
+                    <button class="cart-clear">Vaciar Carrito</button>
+                    <button class="Checkout">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
