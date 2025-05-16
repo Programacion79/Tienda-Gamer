@@ -1,6 +1,21 @@
 // Datos de ejemplo de productos
+/*
 const productos = [
     {
+      nombre: 'Portátil',
+      marca: 'HP',
+      modelo: '240G7',
+      descuento: '-13%',
+      imagen: 'ruta_a_la_imagen.jpg',
+      precio: '$1.800.000',
+      precioDescuento: '$1.760.000',
+      estrellas: 4, // Puedes ajustar esto según la calificación del producto
+      descripcion: {
+        procesador: 'CoreI5',
+        ram: '8Gb',
+        discoDuro: '512Gb',
+        pantalla: '15"',
+      },
       nombre: 'Portátil',
       marca: 'HP',
       modelo: '240G7',

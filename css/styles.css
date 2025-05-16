@@ -235,10 +235,18 @@ img {
     padding: 0.5rem 0;
     position: relative;
     font-size: 1.4rem;
+    margin: 5px;
 }
 
 .nav-links a:hover {
     color: #00f2ff;
+    background-color: #00e5ff33;
+    border-right: 2px solid #00f2ff44;
+    border-left: 2px solid #00f2ff44;
+    color: #fff;
+    width: 65%;
+    color: #fff;
+    width: 100%;
 }
 
 .nav-links a::after {
@@ -249,7 +257,7 @@ img {
     width: 0;
     height: 2px;
     background: #00f2ff;
-    transition: width 0.3s ease;
+    transition: width 0.5s ease;
 }
 
 .nav-links a:hover::after {
@@ -390,7 +398,7 @@ img {
     right: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.1);
     z-index: 2;
 }
 
@@ -519,6 +527,8 @@ img {
     border-top: 2px solid #00f2ff55;
     border-bottom: 2px solid #00f2ff55;*/
     max-width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
     
 }
 
@@ -563,249 +573,71 @@ img {
 /* ============================== */
 /*             CATEGORIES         */
 /* ============================== */
-.top-categories {
-    display: flex;
-    flex-direction: column;
-    font-family: 'AR One Sans', sans-serif;
-    /*align-items: center;
-    gap: 2rem;
-    padding: 2rem;
-    width: 100%;*/
-    color: #fff;
-    text-align: center;
-    /*background-color: #0f0f0f;*/
-    border-top: 2px solid #00f2ff44;
-    border-bottom: 2px solid red;
-    /*border-bottom: 2px solid #00f2ff44;*/
-    border-radius: 10PX;
-    margin-bottom: 20px;
-    max-width: 1200px;
-    height: 340px;
-}
-
-@keyframes fadeInText {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-/*
 .container-categories {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-}
-*/
-.container-categories {
-    /*display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    width: 100%;
-    justify-items: center;
-    Centra las tarjetas horizontalmente */
     display: flex;
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
-}
-.card-category {
-    /*
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 15px;
+    height: auto;
     overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: #f1f1f1;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);*/
-    width: 265px;
-    height: 175px;
-    margin-top: 50px;
+    width: 100%;
+ 
+    /*box-shadow: 0 0 10px #00f2ff33;*/
+    border-top: 2px solid #00f2ff66;
+    border-bottom: 2px solid red;
+    border-radius: 10px;
+    padding: 50px;
+
+
+}
+
+.card-category {
+    text-align: center;
+    width: 255px;
+    height: 185px;
     aspect-ratio: 4 / 3;
-    /*background: linear-gradient(145deg, #1a1a1a, #121212);*/
     background: linear-gradient(145deg, #1a1a1a, #121212);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     border: 1px solid #00f2ff33;
     border-radius: 16px;
     padding: 1.5rem;
-    color: #fff;
+    color: #00f2ff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: all 0.3s ease;
     transition: all 0.3s ease;
     box-shadow: 0 0 10px #00f2ff22;
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    margin: 10px;
 }
-
-.card-category i {
-    font-size: 3rem;
+.card-category, .feature-content span{
     color: red;
-    margin-bottom: .5rem;
-    z-index: 2;
-}
-
-.card-category::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle at center, #00f2ff22 0%, transparent 70%);
-    transform: rotate(25deg);
-    transition: opacity 0.3s ease;
-    opacity: 0;
-}
-
-.card-category:hover::before {
-    opacity: 1;
-}
-
-.card-category:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px #00f2ff55;
-}
-
-.card-category:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px #00f2ff55;
-}
-
-.card-category:hover::before {
-    opacity: 0.2;
+    font-size: 1.3rem;
 }
 
 .category-portatil-oficina {
     background-image: url('../images/Categories/office-1734485_1920.jpg');
-    background-repeat: no-repeat;
-    /*background-size: contain;*/
-    background-size: cover;
-    background-position: center;
     animation: fadeInZoom 1s ease;
 }
 
 .category-escritorio-gamer {
     background-image: url('/images/Categories/card-5884683_1920.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
     animation: fadeInZoom 1.2s ease;
-    background-color: #fff;
 }
 
 .category-partes-accesosrios {
     background-image: url('../images/Categories/king-2473531_1920.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
     animation: fadeInZoom 1.4s ease;
 }
+
 .category-diseño-web {
     background-image: url('../images/Categories/data-5606639_1920.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
     animation: fadeInZoom 1.4s ease;
-}
-.card-category p {
-    font-size: 2.2rem;
-    color: #00f2ff;
-    text-transform: capitalize;
-    z-index: 2;
-    position: relative;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 600;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-}
-
-.card-category span {
-    font-size: 1.6rem;
-    color: #00f2ff;
-    cursor: pointer;
-    font-weight: 700;
-    z-index: 2;
-    position: relative;
-    transition: color 0.3s ease;
-    font-family: 'Montserrat', sans-serif;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-}
-
-.card-category span:hover {
-    color: red;
-}
-
-.card-category:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-}
-
-@keyframes fadeInZoom {
-    0% {
-        opacity: 0;
-        transform: scale(0.95);
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-/* Keyframes for animations */
-
-@keyframes glow {
-    0% {
-        text-shadow: 0 0 5px #ff3c2a, 0 0 10px #ff3c2a, 0 0 15px #ff3c2a;
-    }
-
-    50% {
-        text-shadow: 0 0 10px #ff3c2a, 0 0 20px #ff3c2a, 0 0 30px #ff3c2a;
-    }
-
-    100% {
-        text-shadow: 0 0 5px #ff3c2a, 0 0 10px #ff3c2a, 0 0 15px #ff3c2a;
-    }
-}
-
-
-@keyframes slideIn {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInZoom {
-    from {
-        opacity: 0;
-        transform: scale(0.8);
-    }
-
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
 }
 
 /* ============================== */
@@ -824,10 +656,10 @@ img {
     padding: 2rem;
     width: 100%;
     /*background-color: #0f0f0f;*/
-        border-top: 2px solid #00f2ff44;
-       /* border-bottom: 2px solid #00f2ff44;*/
-            border-bottom: 2px solid red;
-            border-radius: 5px;
+    border-top: 2px solid #00f2ff44;
+    /* border-bottom: 2px solid #00f2ff44;*/
+    border-bottom: 2px solid red;
+    border-radius: 5px;
     text-align: center;
 
 }
@@ -919,290 +751,271 @@ img {
 /* ===== END TOP PRODUCTS ======== */
 /* =============================== */
 
-/* =============================== */
-/* ==========  PRODUCTS ==========*/
-/* =============================== */
-.container-products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 1rem;
-    /*background-color: #0f0f0f;
-    /*border-top: 2px solid #00f2ff44;
-    border-bottom: 2px solid #00f2ff44;*/
-    padding: 5px;
-    width: 100%;
-
+/* --  PRODUCTOS  --- */
+ .container-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  width: 100%;
 }
 
 .card-product {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: #fafafa;
-    font-size: 1rem;
-    color: red;
-    padding: 20px;
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-product:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
 }
 
 .container-img {
-    position: relative;
-    width: 100%;
-    height: 150px;
-    overflow: hidden;
+  position: relative;
+  width: 50%;
+  height: 200px;
+  overflow: hidden;
 }
 
 .container-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card-product:hover .container-img img {
+  transform: scale(1.1);
 }
 
 .discount {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: red;
-    color: white;
-    padding: 5px;
-    border-radius: 3px;
-    font-size: 1rem;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
 }
 
 .button-group {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    display: flex;
-    gap: 5px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  gap: 8px;
 }
 
 .button-group button {
-    background-color: #fff;
-    border: none;
-    border-radius: 50%;
-    padding: 6px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    font-size: 0.8rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
 }
 
 .button-group button:hover {
-    background-color: #eee;
-    transform: scale(1.1);
-}
-
-.stars {
-    display: flex;
-    gap: 2px;
-    margin-bottom: 5px;
-    /* Espacio entre estrellas y precio */
-}
-
-.stars i {
-    color:red;
-    transition: transform 0.2s ease;
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-.stars i:hover {
-    transform: scale(1.2);
+  background-color: #f0f0f0;
+  transform: scale(1.1);
 }
 
 .content-card-product {
-    padding: 10px;
+  padding: 1rem;
+}
+
+.title-product {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.brand-model {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
+.stars {
+  display: flex;
+  gap: 3px;
+  margin: 0.5rem 0;
+}
+
+.stars i {
+  color: gold;
+  font-size: 1.2rem;
+  transition: transform 0.2s;
+}
+
+.stars i:hover {
+  transform: scale(1.2);
+}
+
+.content-price-product {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .product-price {
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #212121;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #111;
 }
 
 .product-discount {
-    color: #757575;
-    text-decoration: line-through;
-    font-size: 0.9rem;
+  font-size: 1rem;
+  color: #999;
+  text-decoration: line-through;
 }
 
 .content-card-product-description {
-    padding: 10px;
-    border-top: 1px solid #ddd;
+  border-top: 1px solid #eee;
+  padding: 1rem;
 }
 
 .product-description {
-    margin: 0;
-    /* Eliminar margen por defecto */
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
+
+.content-product-description li {
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  color: #444;
+}
+
 .add-cart {
-    background-color: #000;
-    /* Color de fondo */
-    color: white;
-    /* Color del texto */
-    border: none;
-    /* Sin borde */
-    padding: 15px 16px;
-    /* Espaciado interno */
-    border-radius: 8px;
-    /* Bordes redondeados */
-    cursor: pointer;
-    /* Cambia el cursor al pasar sobre el botón */
-    transition: background-color 0.1s ease, transform 0.2s ease, box-shadow 0.3s ease, color 0.3s ease;
-    /* Transiciones suaves */
-    font-size: 1rem;
-    /* Tamaño de texto */
-    text-transform: uppercase;
-    /* Texto en mayúsculas */
-    width: 100%;
-    /* Ancho completo */
-    margin-top: 10px;
-    /* Margen superior */
-    font-weight: 700;
-    /* Peso de fuente */
-    position: relative;
-    /* Para posicionar el pseudo-elemento */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Sombra del botón */
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  margin: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-/* Efecto al pasar el mouse */
 .add-cart:hover {
-    background-color: #333;
-    /* Cambio de color de fondo al pasar el mouse *
-    transform: scale(1.05) rotate(2deg);
-    /* Escala del botón y ligera rotación *
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    /* Sombra más intensa */
+  background-color: #333;
+  transform: scale(1.03);
 }
-
-/* Efecto de subrayado con pseudo-elemento */
-.add-cart::after {
-    content: '';
-    display: block;
-    /* Muestra el pseudo-elemento */
-    width: 1;
-    /* Ancho inicial */
-    height: 3px;
-    /* Altura de la línea */
-    background: #fff;
-    /* Color de la línea */
-    transition: width 0.1s;
-    /* Transición del ancho */
-    position: absolute;
-    /* Posición relativa al botón */
-    bottom: 5px;
-    /* Ubicación inferior */
-    left: 50%;
-    /* Centrado horizontal */
-    transform: translateX(-50%);
-    /* Ajuste de la posición */
-}
-
-/* Efecto de subrayado al pasar el mouse */
-.add-cart:hover::after {
-    width: 100%;
-    /* Ancho completo al pasar el mouse */
-}
-
-/* Efecto de pulsación */
-.add-cart:active {
-    transform: scale(0.1);
-    /* Escala al hacer clic */
-}
-
-/* Cambio de color de texto al pasar el mouse */
-.add-cart:hover {
-    color: #Ffff;
-    /* Cambia el color del texto al pasar el mouse */
-}
-
-
-/* Efecto de deslizamiento */
-.add-cart {
-    position: relative;
-    /* Necesario para el pseudo-elemento */
-}
-
-.add-cart::before {
-    content: '';
-    position: absolute;
-    /*background-color: rgba(255, 255, 255, 0.2);
-    /* Color del deslizamiento */
-    width: 100%;
-    height: 100%;
-    left: -100%;
-    /* Comienza fuera del botón */
-    top: 0;
-    transition: left 0.3s;
-    /* Transición suave */
-    z-index: 0;
-    /* Asegúrate de que quede detrás del texto */
-}
-
-.add-cart:hover::before {
-    left: 0;
-    /* Desliza el efecto al pasar el mouse */
-}
-
-.add-cart span {
-    position: relative;
-    /* Necesario para posicionar el texto por encima del pseudo-elemento */
-    z-index: 1;
-    /* Asegúrate de que el texto quede delante */
-}
-
-/* =============================== */
-/* ========== END PRODUCTS ========*/
-/* =============================== */
+/* --  PRODUCTOS  --- */
 
 /* ============================== */
 /*            GALLERY             */
 /* ============================== */
-/*
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 30rem);
-    max-width: 100%;
-    /* Ajusta el ancho máximo según tus necesidades *
-    margin: 0 auto;
-    /*Centra la galería en el contenedor *
-    padding: 5rem;
-    /* Agrega un relleno para dar espacio alrededor *
-    gap: 1.5rem;
-    margin-bottom: 3rem;
-    background: var(--grad-background);
-}*/
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 30rem);
-    max-width: 100%;
-    /* Ajusta el ancho máximo según tus necesidades */
-    margin: 0 auto;
-    /*Centra la galería en el contenedor */
-    padding: 5rem;
-    /* Agrega un relleno para dar espacio alrededor */
-    gap: 1.5rem;
-    margin-bottom: 3rem;
-    background: var(--grad-background);
+
+.gallery-gamer {
+    /*background-color: #0f0f0f;*/
+    border-top: 2px solid #00f2ff44;
+    /* border-bottom: 2px solid #00f2ff44;*/
+    border-bottom: 2px solid red;
+    border-radius: 5px;
+  padding: 2rem 2.5rem;
+  text-align: center;
+background-color: transparent;
+/*margin-bottom: 30px;*/
 }
 
-.gallery img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.gallery-title-neon {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #00f2ff;
+  margin-bottom: 3rem;
+  letter-spacing: 2px;
+  animation: neonTitle 2s infinite alternate;
+  text-shadow: 0 0 10px #00f2ff, 0 0 20px #ff2e2e;
 }
 
-.gallery-img-3 {
-    grid-column: 2/4;
-    grid-row: 1/3;
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
+
+.gallery-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 1rem;
+  opacity: 0;
+  transform: scale(0.95);
+  animation: fadeIn 0.6s ease-out forwards;
+  box-shadow: 0 0 15px rgba(255, 46, 46, 0.3);
+  border: 2px solid rgba(255, 46, 46, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #00f2ff, 0 0 15px #ff2e2e, 0 0 25px #00f2ff;
+  border-color: #ff2e2e;
+  z-index: 2;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes neonTitle {
+  0% {
+    text-shadow: 0 0 5px #ff2e2e, 0 0 10px #ff2e2e;
+  }
+  100% {
+    text-shadow: 0 0 15px #ff2e2e, 0 0 25px #ff2e2e;
+  }
+}
+
+/* Retrasos para entrada escalonada */
+/* Retrasos para la animación escalonada */
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+.delay-5 { animation-delay: 1s;}
+/* Efecto de pulso continuo estilo neón */
+@keyframes pulseNeon {
+  0%, 100% {
+    box-shadow: 0 0 10px #ff2e2e, 0 0 20px #00f2ff;
+  }
+  50% {
+    box-shadow: 0 0 20px #00f2ff, 0 0 30px #ff2e2e;
+  }
+}
+
+/* Aplica la animación de pulso */
+.gallery-img {
+  animation: fadeIn 0.8s ease-out forwards, pulseNeon 3s infinite alternate;
+}
+/* ============================== */
+/*          END  GALLERY          */
+/* ============================== */
+
 
 
 /* ============================== */

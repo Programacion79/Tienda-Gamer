@@ -12,41 +12,41 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
     <!--  =========== HEADER ==========  ---->
-        <header class="menu-gamer">
-            <div class="logo">Tienda Gamer</div>
+    <header class="menu-gamer">
+        <div class="logo">Tienda Gamer</div>
         <!--  =========== NAVIGATION ==========  ---->
-            <nav class="nav-links">
-                <a href="#">Inicio</a>
-                <a href="#">Productos</a>
-                <a href="#">Ofertas</a>
-                <a href="contacto.html">Contacto</a>
-        <!--  =========== NAVIGATION ==========  ---->
-            </nav>
-            <div class="acciones">
+        <nav class="nav-links">
+            <a href="#">Inicio</a>
+            <a href="#">Productos</a>
+            <a href="#">Ofertas</a>
+            <a href="contacto.html">Contacto</a>
+            <!--  =========== NAVIGATION ==========  ---->
+        </nav>
+        <div class="acciones">
             <!--  =========== BUSCADOR ==========  ---->
-                <div class="buscador">
-                    <input type="text" placeholder="Buscar productos..." />
-                    <button><i class="fas fa-search"></i></button>
-                </div>
-            <!--  =========== BUSCADOR ==========  ---->
-            <!--  =========== INICIO DE SECCION ==========  ---->
-                <a href="paginalogin.html" class="icon-btn" title="Iniciar Sesión">
-                    <i class="fas fa-user"></i>
-                </a>
-            <!--  =========== INICIO DE SECCION ==========  ---->
-            <!--  =========== CARRITO DE COMPRAS ==========  ---->
-                <a href="#" class="icon-btn" title="Carrito de Compras">
-                    <i class="fas fa-shopping-cart"></i>
-                </a>
-            <!--  =========== CARRITO DE COMPRAS ==========  ---->
+            <div class="buscador">
+                <input type="text" placeholder="Buscar productos..." />
+                <button><i class="fas fa-search"></i></button>
             </div>
-        </header>
+            <!--  =========== BUSCADOR ==========  ---->
+            <!--  =========== INICIO DE SECCION ==========  ---->
+            <a href="paginalogin.html" class="icon-btn" title="Iniciar Sesión">
+                <i class="fas fa-user"></i>
+            </a>
+            <!--  =========== INICIO DE SECCION ==========  ---->
+            <!--  =========== CARRITO DE COMPRAS ==========  ---->
+            <a href="#" class="icon-btn" title="Carrito de Compras">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+            <!--  =========== CARRITO DE COMPRAS ==========  ---->
+        </div>
+    </header>
     <!--  ===========  END HEADER ==========  -->
 
     <!--  ===========  BANNER ==========  -->
@@ -98,34 +98,31 @@
         </section>
 
         <!-- ========= TARJETA DE CATEGORIAS ========= -->
-        <section class="container top-categories">
-            <h1 class="heading-1">Categorías que manejamos</h1>
-            <div class="container-categories">
-                <article class="card-category category-portatil-oficina">
-                    <p>Portátiles - Oficina</p>
-                    <!--<i class="fas fa-laptop"></i>-->
-                    <span>Ver más</span>
-                </article>
+    <section class="container top-categories">
+        <h1 class="heading-1">Categorías que manejamos</h1>
+        <div class="container-categories">
+            <article class="card-category category-portatil-oficina">
+                <p>Portátiles - Oficina</p>
+                <span>Ver más</span>
+            </article>
+    
+            <article class="card-category category-escritorio-gamer">
+                <p>Escritorio - Gamer</p>
+                <span>Ver más</span>
+            </article>
+    
+            <article class="card-category category-partes-accesosrios">
+                <p>Partes & Accesorios</p>
+                <span>Ver más</span>
+            </article>
+    
+            <article class="card-category category-diseño-web">
+                <p>Diseño - Web</p>
+                <span>Ver más</span>
+            </article>
+        </div>
+    </section>
 
-                <article class="card-category  category-escritorio-gamer">
-                    <p>Escritorio - Gamer</p>
-                    <!--<i class="fas fa-chair"></i>-->
-                    <span>Ver más</span>
-                </article>
-
-                <article class="card-category  category-partes-accesosrios">
-                    <p>Partes & Accesorios</p>
-                    <!--<i class="fas fa-mobile-alt"></i>-->
-                    <span>Ver más</span>
-                </article>
-
-                <article class="card-category category-diseño-web">
-                    <p>Diseño - Web </p>
-                    <!--<i class="fas fa-mobile-alt"></i>-->
-                    <span>Ver más</span>
-                </article>
-            </div>
-        </section>
         <!-- ========= TARJETA DE CATEGORIAS ========= -->
 
         <!-- ========= TARJETA DE TOP PRODUCTOS ========= -->
@@ -141,6 +138,170 @@
             </div>
             <!-- ========== PRODUCTOS ========== -->
             <div class="container-products">
+                <style>
+                    .container-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.card-product {
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.container-img {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.container-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card-product:hover .container-img img {
+  transform: scale(1.1);
+}
+
+.discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.button-group {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.button-group button {
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.button-group button:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.1);
+}
+
+.content-card-product {
+  padding: 1rem;
+}
+
+.title-product {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.brand-model {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
+.stars {
+  display: flex;
+  gap: 3px;
+  margin: 0.5rem 0;
+}
+
+.stars i {
+  color: gold;
+  font-size: 1.2rem;
+  transition: transform 0.2s;
+}
+
+.stars i:hover {
+  transform: scale(1.2);
+}
+
+.content-price-product {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.product-price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #111;
+}
+
+.product-discount {
+  font-size: 1rem;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.content-card-product-description {
+  border-top: 1px solid #eee;
+  padding: 1rem;
+}
+
+.product-description {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.content-product-description li {
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  color: #444;
+}
+
+.add-cart {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  margin: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.add-cart:hover {
+  background-color: #333;
+  transform: scale(1.03);
+}
+
+                </style>
                 <!-- ========== PRODUCTO 1 ========== -->
                 <!--<div class="container-products">
                             <article class="card-product">
@@ -239,7 +400,7 @@
                                 </button>
                             </div>
                         </div>-->
-        
+
                 <!-- ========== PRODUCTO 3 ========== -->
                 <!--<div class="container-products">
                             <article class="card-product">
@@ -288,8 +449,8 @@
                                 <button type="button" class="add-cart">Agregar</button>
                             </article>
                         </div>-->
-        
-        
+
+
                 <!-- ========== PRODUCTO 4 ========== -->
                 <!--<div class="container-products">
                             <article class="card-product">
@@ -340,7 +501,7 @@
                                 </button>
                             </article>
                         </div>-->
-        
+
                 <div class="container-products" id="products-list">
                     <!-- Los productos se cargarán dinámicamente aquí -->
                 </div>
@@ -351,17 +512,25 @@
     </main>
 
     <!--  ===========  GALLERY ==========  -->
-<section class="gallery">
-    <img src="../images/gallery/1.jpg" alt="gallery Img1" class="gallery-img-1">
-    <img src="../images/gallery/2.jpg" alt="gallery Img2" class="gallery-img-2">
-    <img src="../images/gallery/3.jpg" alt="gallery Img3" class="gallery-img-3">
-    <img src="../images/gallery/4.jpg" alt="gallery Img4" class="gallery-img-4">
-    <img src="../images/gallery/5.jpg" alt="gallery Img5" class="gallery-img-5">
+<section class="gallery-gamer">
+  <h2 class="gallery-title-neon heading-1">Galería Gamer</h2>
+  <div class="gallery-grid">
+    <img src="../images/gallery/1.jpg" alt="Producto 1" class="gallery-img delay-1">
+    <img src="../images/gallery/2.jpg" alt="Producto 2" class="gallery-img delay-2">
+    <img src="../images/gallery/3.jpg" alt="Producto 3" class="gallery-img delay-3">
+    <img src="../images/gallery/4.jpg" alt="Producto 4" class="gallery-img delay-4">
+    <img src="../images/gallery/5.jpg" alt="Producto 5" class="gallery-img delay-5">
+    <img src="../images/gallery/6.jpg" alt="Producto 5" class="gallery-img delay-6">
+    <img src="../images/gallery/7.jpg" alt="Producto 5" class="gallery-img delay-7">
+    <img src="../images/gallery/8.jpg" alt="Producto 5" class="gallery-img delay-8">
+
+  </div>
 </section>
+
     <!--  =========== END  GALLERY ==========  -->
 
     <!--  ===========  OFERTAS  ==========  -->
-    
+
     <!--  ===========  OFERTAS  ==========  -->
 
     <!--  ===========  BLOG ==========  -->
@@ -521,109 +690,109 @@
         </div>
     </footer>
     <!--  =========== END  FOOTER ==========  -->
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const banner = document.querySelector(".banner");
-        const title = banner.querySelector("h2"); // Selecciona el título
-        const paragraph = banner.querySelector("p"); // Selecciona el párrafo
-        const images = [
-            "../images/Imagenes/Banner/Banner.jpg",
-            "../images/Imagenes/Banner/Banner2.jpg",
-            "../images/Imagenes/Banner/Banner3.jpg",
-            "../images/Imagenes/Banner/Banner4.jpg"
-        ];
-        const texts = [
-            { title: "Tecnigma", paragraph: "Transformando problemas en soluciones, donde la tecnología y la confianza se encuentran." },
-            { title: "Reparaciones", paragraph: "Reparamos y realizamos mantenimiento a tus computadoras" },
-            { title: "Instalaciones", paragraph: "Instalamos partes y vendemos piezas de calidad" },
-            { title: "Diseño", paragraph: "Ofrecemos soluciones de diseño personalizadas" }
-        ];
-        let currentIndex = 0;
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const banner = document.querySelector(".banner");
+            const title = banner.querySelector("h2"); // Selecciona el título
+            const paragraph = banner.querySelector("p"); // Selecciona el párrafo
+            const images = [
+                "../images/Imagenes/Banner/Banner.jpg",
+                "../images/Imagenes/Banner/Banner2.jpg",
+                "../images/Imagenes/Banner/Banner3.jpg",
+                "../images/Imagenes/Banner/Banner4.jpg"
+            ];
+            const texts = [
+                { title: "Tecnigma", paragraph: "Transformando problemas en soluciones, donde la tecnología y la confianza se encuentran." },
+                { title: "Reparaciones", paragraph: "Reparamos y realizamos mantenimiento a tus computadoras" },
+                { title: "Instalaciones", paragraph: "Instalamos partes y vendemos piezas de calidad" },
+                { title: "Diseño", paragraph: "Ofrecemos soluciones de diseño personalizadas" }
+            ];
+            let currentIndex = 0;
 
-        function changeBackground() {
-            // Cambiar la imagen de fondo
-            banner.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            function changeBackground() {
+                // Cambiar la imagen de fondo
+                banner.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
           url('${images[currentIndex]}')`;
 
-            // Cambiar el texto del título y párrafo
-            title.textContent = texts[currentIndex].title;
-            paragraph.textContent = texts[currentIndex].paragraph;
+                // Cambiar el texto del título y párrafo
+                title.textContent = texts[currentIndex].title;
+                paragraph.textContent = texts[currentIndex].paragraph;
 
-            currentIndex = (currentIndex + 1) % images.length;
-        }
+                currentIndex = (currentIndex + 1) % images.length;
+            }
 
-        // Cambia la imagen de fondo y el texto cada 7 segundos
-        setInterval(changeBackground, 10000);
+            // Cambia la imagen de fondo y el texto cada 7 segundos
+            setInterval(changeBackground, 10000);
 
-        // Cambia la imagen de fondo y el texto al cargar la página
-        changeBackground();
-    });
+            // Cambia la imagen de fondo y el texto al cargar la página
+            changeBackground();
+        });
 
-</script>
+    </script>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const imgElement = document.querySelector(".products-hp");
-        const images = [
-            "images/ImagenesProductos/Portatiles/Hp/240G7/168868000-1-255G7.jpg",
-            "images/ImagenesProductos/Portatiles/Hp/240G7/168868000-2-255G7.jpg",
-            "images/ImagenesProductos/Portatiles/Hp/240G7/168868000-3-255G7.jpg",
-            "images/ImagenesProductos/Portatiles/Hp/240G7/168868000-4-255G7.jpg",
-            "images/ImagenesProductos/Portatiles/Hp/240G7/168868000-5-255G7.jpg",
-            "images/ImagenesProductos/Portatiles/Hp/240G7/168868000-255G7.jpg"
-        ];
-        let currentIndex = 0;
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const imgElement = document.querySelector(".products-hp");
+            const images = [
+                "images/ImagenesProductos/Portatiles/Hp/240G7/168868000-1-255G7.jpg",
+                "images/ImagenesProductos/Portatiles/Hp/240G7/168868000-2-255G7.jpg",
+                "images/ImagenesProductos/Portatiles/Hp/240G7/168868000-3-255G7.jpg",
+                "images/ImagenesProductos/Portatiles/Hp/240G7/168868000-4-255G7.jpg",
+                "images/ImagenesProductos/Portatiles/Hp/240G7/168868000-5-255G7.jpg",
+                "images/ImagenesProductos/Portatiles/Hp/240G7/168868000-255G7.jpg"
+            ];
+            let currentIndex = 0;
 
-        function changeImage() {
-            imgElement.src = images[currentIndex];
-            currentIndex = (currentIndex + 1) % images.length;
-        }
+            function changeImage() {
+                imgElement.src = images[currentIndex];
+                currentIndex = (currentIndex + 1) % images.length;
+            }
 
-        // Cambia la imagen cada 7 segundos
-        setInterval(changeImage, 7000);
+            // Cambia la imagen cada 7 segundos
+            setInterval(changeImage, 7000);
 
-        // Cambia la imagen al cargar la página
-        changeImage();
-    });
-</script>
+            // Cambia la imagen al cargar la página
+            changeImage();
+        });
+    </script>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const galleryImages = document.querySelectorAll(".gallery-img-3 g");
-        const totalImages = galleryImages.length;
-        let currentIndex = 0;
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const galleryImages = document.querySelectorAll(".gallery-img-3 g");
+            const totalImages = galleryImages.length;
+            let currentIndex = 0;
 
-        function updateGallery() {
-            // Elimina las clases de todas las imágenes
-            galleryImages.forEach(img => {
-                img.classList.remove(".gallery-img-3 ");
-                img.classList.remove("fade-out");
-            });
+            function updateGallery() {
+                // Elimina las clases de todas las imágenes
+                galleryImages.forEach(img => {
+                    img.classList.remove(".gallery-img-3 ");
+                    img.classList.remove("fade-out");
+                });
 
-            // Cambia la imagen centrada
-            galleryImages[currentIndex].classList.add(".gallery-img-3");
+                // Cambia la imagen centrada
+                galleryImages[currentIndex].classList.add(".gallery-img-3");
 
-            // Incrementa el índice de la imagen actual
-            currentIndex = (currentIndex + 1) % totalImages;
+                // Incrementa el índice de la imagen actual
+                currentIndex = (currentIndex + 1) % totalImages;
 
-            // Agrega un efecto de desvanecimiento a la siguiente imagen
-            galleryImages[currentIndex].classList.add("fade-out");
+                // Agrega un efecto de desvanecimiento a la siguiente imagen
+                galleryImages[currentIndex].classList.add("fade-out");
 
-            // Cambia la imagen de fondo después de un breve retraso
-            setTimeout(() => {
-                galleryImages[currentIndex].classList.remove("fade-out");
-            }, 1000); // Sincroniza con el tiempo del efecto de desvanecimiento
-        }
+                // Cambia la imagen de fondo después de un breve retraso
+                setTimeout(() => {
+                    galleryImages[currentIndex].classList.remove("fade-out");
+                }, 1000); // Sincroniza con el tiempo del efecto de desvanecimiento
+            }
 
-        // Cambia la imagen cada 10 segundos (10000 milisegundos)
-        setInterval(updateGallery, 5000);
+            // Cambia la imagen cada 10 segundos (10000 milisegundos)
+            setInterval(updateGallery, 5000);
 
-        // Inicializa la galería
-        updateGallery();
-    });
+            // Inicializa la galería
+            updateGallery();
+        });
 
-</script>
-<!-- CODIGO DEL10 DE OCTUBRE--
+    </script>
+    <!-- CODIGO DEL10 DE OCTUBRE--
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const menuOptions = document.querySelectorAll(".menu-options li");
@@ -814,9 +983,9 @@
     });
 </script>
 -- CODIGO DEL 10 DE OCTUBRE-->
-<!-- CODIGO DEL 10.1 DE OCTUBRE-->
- <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    <!-- CODIGO DEL 10.1 DE OCTUBRE-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
             const menuOptions = document.querySelectorAll(".menu-options li");
             const productsList = document.getElementById("products-list");
 
@@ -845,7 +1014,7 @@
                             screen: "15\""
                         }
                     },
-                                        {
+                    {
                         title: "Portátil HP 255G7",
                         brand: "HP",
                         model: "255G7",
@@ -866,7 +1035,7 @@
                             screen: "15\""
                         }
                     },
-                                        {
+                    {
                         title: "Portátil HP 240G7",
                         brand: "HP",
                         model: "240G7",
@@ -888,7 +1057,7 @@
                             screen: "15\""
                         }
                     },
-                                        {
+                    {
                         title: "Portátil HP 240G7",
                         brand: "HP",
                         model: "240G7",
@@ -931,7 +1100,7 @@
                             screen: "17\""
                         }
                     },
-                                {
+                    {
                         title: "Portátil Gamer ASUS",
                         brand: "ASUS",
                         model: "ROG Strix",
@@ -950,7 +1119,7 @@
                             screen: "17\""
                         }
                     },
-                                {
+                    {
                         title: "Portátil Gamer ASUS",
                         brand: "ASUS",
                         model: "ROG Strix",
@@ -969,7 +1138,7 @@
                             screen: "17\""
                         }
                     },
-                                {
+                    {
                         title: "Portátil Gamer ASUS",
                         brand: "ASUS",
                         model: "ROG Strix",
@@ -987,7 +1156,7 @@
                             storage: "1Tb SSD",
                             screen: "17\""
                         }
-                    },                        
+                    },
                     // Agrega más productos aquí
                 ],
                 vendidos: [
@@ -1009,7 +1178,7 @@
                             screen: "14\""
                         }
                     },
-                                        {
+                    {
                         title: "Portátil Lenovo IdeaPad",
                         brand: "Lenovo",
                         model: "IdeaPad 3",
@@ -1027,7 +1196,7 @@
                             screen: "14\""
                         }
                     },
-                                        {
+                    {
                         title: "Portátil Lenovo IdeaPad",
                         brand: "Lenovo",
                         model: "IdeaPad 3",
@@ -1045,7 +1214,7 @@
                             screen: "14\""
                         }
                     },
-                                        {
+                    {
                         title: "Portátil Lenovo IdeaPad",
                         brand: "Lenovo",
                         model: "IdeaPad 3",
@@ -1064,7 +1233,7 @@
                         }
                     },
 
-                    
+
                     // Agrega más productos aquí
                 ],
                 usados: [
@@ -1086,7 +1255,7 @@
                             screen: "14\""
                         }
                     },
-                                        {
+                    {
                         title: "Portátil Dell Latitude",
                         brand: "Dell",
                         model: "Latitude E7440",
@@ -1104,7 +1273,7 @@
                             screen: "14\""
                         }
                     },
-                                        {
+                    {
                         title: "Portátil Dell Latitude",
                         brand: "Dell",
                         model: "Latitude E7440",
@@ -1122,7 +1291,7 @@
                             screen: "14\""
                         }
                     },
-                                        {
+                    {
                         title: "Portátil Dell Latitude",
                         brand: "Dell",
                         model: "Latitude E7440",
@@ -1234,380 +1403,380 @@
             renderProducts("destacados");
         });
 
- </script>
-<!-- CODIGO DEL 10.1 DE OCTUBRE-->
+    </script>
+    <!-- CODIGO DEL 10.1 DE OCTUBRE-->
 
-<!-- CODIGO PARA PRODUCTOS EM OFERTA 12 DE OCTUBRE-->
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        //const menuOptions = document.querySelectorAll(".menu-options li");
-        const Oferts = document.getElementById("products-oferts");
+    <!-- CODIGO PARA PRODUCTOS EM OFERTA 12 DE OCTUBRE-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            //const menuOptions = document.querySelectorAll(".menu-options li");
+            const Oferts = document.getElementById("products-oferts");
 
-        // Datos de productos simulados
-        const productsData = {
-            Ofersts: [
-                {
-                    title: "Portátil HP 240G7",
-                    brand: "HP",
-                    model: "240G7",
-                    discount: "13%",
-                    price: "$1.800.000",
-                    discountedPrice: "$1.760.000",
-                    images: [
-                        "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-255G7.jpg",
-                        "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-1-255G7.jpg",
-                        "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-2-255G7.jpg",
-                        "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-3-255G7.jpg",
-                        "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-4-255G7.jpg",
-                        "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-5-255G7.jpg"
-                    ],
-                    specs: {
-                        processor: "CoreI5",
-                        ram: "8Gb",
-                        storage: "512Gb",
-                        screen: "15\""
-                    }
-                },
-                {
-                    title: "Portátil HP 255G7",
-                    brand: "HP",
-                    model: "255G7",
-                    discount: "13%",
-                    price: "$1.800.000",
-                    discountedPrice: "$1.760.000",
-                    images: [
-                        "../images/ImagenesProductos/Portatiles/Hp/255G7/170058000-1- 255G7.jpg",
-                        "../images/ImagenesProductos/Portatiles/Hp/240G7/170058000- 255G7.jpg",
-                        "../images/ImagenesProductos/Portatiles/Hp/240G7/170058000-4- 255G7.jpg",
-                        "../images/ImagenesProductos/Portatiles/Hp/240G7/170058000-2- 255G7.jpg",
-                        "../images/ImagenesProductos/Portatiles/Hp/240G7/170058000-3- 255G7.jpg",
-                    ],
-                    specs: {
-                        processor: "CoreI5",
-                        ram: "8Gb",
-                        storage: "512Gb",
-                        screen: "15\""
-                    }
-                },
-                {
-                    title: "Portátil HP 240G7",
-                    brand: "HP",
-                    model: "240G7",
-                    discount: "13%",
-                    price: "$1.800.000",
-                    discountedPrice: "$1.760.000",
-                    images: [
-                        "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-255G7.jpg",
-                        "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-1-255G7.jpg",
-                        "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-2-255G7.jpg",
-                        "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-3-255G7.jpg",
-                        "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-4-255G7.jpg",
-                        "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-5-255G7.jpg"
-                    ],
-                    specs: {
-                        processor: "CoreI5",
-                        ram: "8Gb",
-                        storage: "512Gb",
-                        screen: "15\""
-                    }
-                },
-                {
-                    title: "Portátil HP 240G7",
-                    brand: "HP",
-                    model: "240G7",
-                    discount: "13%",
-                    price: "$1.800.000",
-                    discountedPrice: "$1.760.000",
-                    images: [
-                        "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-255G7.jpg",
-                        "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-1-255G7.jpg",
-                        "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-2-255G7.jpg",
-                        "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-3-255G7.jpg",
-                        "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-4-255G7.jpg",
-                        "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-5-255G7.jpg"
-                    ],
-                    specs: {
-                        processor: "CoreI5",
-                        ram: "8Gb",
-                        storage: "512Gb",
-                        screen: "15\""
-                    }
-                },
-                // Agrega más productos aquí
-            ],
-            gamer: [
-                {
-                    title: "Portátil PAVILION 15-DK0001LA",
-                    brand: "HP",
-                    model: "PAVILION 15-DK0001LA",
-                    discount: "10%",
-                    price: "$2.500.000",
-                    discountedPrice: "$2.250.000",
-                    images: [
-                        "../images/ImagenesProductos/Portatiles/Hp/PAVILION 15-DK0001LA/193905279975.webp",
-                        "../images/ImagenesProductos/Portatiles/Hp/PAVILION 15-DK0001LA/"
-                    ],
-                    specs: {
-                        processor: "CoreI7",
-                        ram: "16Gb",
-                        storage: "1Tb SSD",
-                        screen: "17\""
-                    }
-                },
-                {
-                    title: "Portátil Gamer ASUS",
-                    brand: "ASUS",
-                    model: "ROG Strix",
-                    discount: "10%",
-                    price: "$2.500.000",
-                    discountedPrice: "$2.250.000",
-                    images: [
-                        "../images/ImagenesProductos/Gamer/Asus/ROGStrix1.jpg",
-                        "../images/ImagenesProductos/Gamer/Asus/ROGStrix2.jpg",
-                        "../images/ImagenesProductos/Gamer/Asus/ROGStrix3.jpg"
-                    ],
-                    specs: {
-                        processor: "CoreI7",
-                        ram: "16Gb",
-                        storage: "1Tb SSD",
-                        screen: "17\""
-                    }
-                },
-                {
-                    title: "Portátil Gamer ASUS",
-                    brand: "ASUS",
-                    model: "ROG Strix",
-                    discount: "10%",
-                    price: "$2.500.000",
-                    discountedPrice: "$2.250.000",
-                    images: [
-                        "../images/ImagenesProductos/Gamer/Asus/ROGStrix1.jpg",
-                        "../images/ImagenesProductos/Gamer/Asus/ROGStrix2.jpg",
-                        "../images/ImagenesProductos/Gamer/Asus/ROGStrix3.jpg"
-                    ],
-                    specs: {
-                        processor: "CoreI7",
-                        ram: "16Gb",
-                        storage: "1Tb SSD",
-                        screen: "17\""
-                    }
-                },
-                {
-                    title: "Portátil Gamer ASUS",
-                    brand: "ASUS",
-                    model: "ROG Strix",
-                    discount: "10%",
-                    price: "$2.500.000",
-                    discountedPrice: "$2.250.000",
-                    images: [
-                        "../images/ImagenesProductos/Gamer/Asus/ROGStrix1.jpg",
-                        "../images/ImagenesProductos/Gamer/Asus/ROGStrix2.jpg",
-                        "../images/ImagenesProductos/Gamer/Asus/ROGStrix3.jpg"
-                    ],
-                    specs: {
-                        processor: "CoreI7",
-                        ram: "16Gb",
-                        storage: "1Tb SSD",
-                        screen: "17\""
-                    }
-                },
-                // Agrega más productos aquí
-            ],
-            vendidos: [
-                {
-                    title: "Portátil PAVILION15-CW1004LA",
-                    brand: "HP",
-                    model: "PAVILION15-CW1004LA",
-                    discount: "15%",
-                    price: "$1.200.000",
-                    discountedPrice: "$1.020.000",
-                    images: [
-                        "../images/ImagenesProductos/Portatiles/Hp/PAVILION15-CW1004LA/170008000_PAVILION 15.jpg",
-                        "../images/ImagenesProductos/Portatiles/Lenovo/IdeaPad32.jpg"
-                    ],
-                    specs: {
-                        processor: "CoreI3",
-                        ram: "4Gb",
-                        storage: "1Tb",
-                        screen: "14\""
-                    }
-                },
-                {
-                    title: "Portátil Lenovo IdeaPad",
-                    brand: "Lenovo",
-                    model: "IdeaPad 3",
-                    discount: "15%",
-                    price: "$1.200.000",
-                    discountedPrice: "$1.020.000",
-                    images: [
-                        "../images/ImagenesProductos/Portatiles/Lenovo/IdeaPad31.jpg",
-                        "../images/ImagenesProductos/Portatiles/Lenovo/IdeaPad32.jpg"
-                    ],
-                    specs: {
-                        processor: "CoreI3",
-                        ram: "4Gb",
-                        storage: "1Tb",
-                        screen: "14\""
-                    }
-                },
-                {
-                    title: "Portátil Lenovo IdeaPad",
-                    brand: "Lenovo",
-                    model: "IdeaPad 3",
-                    discount: "15%",
-                    price: "$1.200.000",
-                    discountedPrice: "$1.020.000",
-                    images: [
-                        "../images/ImagenesProductos/Portatiles/Lenovo/IdeaPad31.jpg",
-                        "../images/ImagenesProductos/Portatiles/Lenovo/IdeaPad32.jpg"
-                    ],
-                    specs: {
-                        processor: "CoreI3",
-                        ram: "4Gb",
-                        storage: "1Tb",
-                        screen: "14\""
-                    }
-                },
-                {
-                    title: "Portátil Lenovo IdeaPad",
-                    brand: "Lenovo",
-                    model: "IdeaPad 3",
-                    discount: "15%",
-                    price: "$1.200.000",
-                    discountedPrice: "$1.020.000",
-                    images: [
-                        "../images/ImagenesProductos/Portatiles/Lenovo/IdeaPad31.jpg",
-                        "../images/ImagenesProductos/Portatiles/Lenovo/IdeaPad32.jpg"
-                    ],
-                    specs: {
-                        processor: "CoreI3",
-                        ram: "4Gb",
-                        storage: "1Tb",
-                        screen: "14\""
-                    }
-                },
-                {
-                    title: "Portátil Lenovo IdeaPad",
-                    brand: "Lenovo",
-                    model: "IdeaPad 3",
-                    discount: "15%",
-                    price: "$1.200.000",
-                    discountedPrice: "$1.020.000",
-                    images: [
-                        "../images/ImagenesProductos/Portatiles/Lenovo/IdeaPad31.jpg",
-                        "../images/ImagenesProductos/Portatiles/Lenovo/IdeaPad32.jpg"
-                    ],
-                    specs: {
-                        processor: "CoreI3",
-                        ram: "4Gb",
-                        storage: "1Tb",
-                        screen: "14\""
-                    }
-                },
+            // Datos de productos simulados
+            const productsData = {
+                Ofersts: [
+                    {
+                        title: "Portátil HP 240G7",
+                        brand: "HP",
+                        model: "240G7",
+                        discount: "13%",
+                        price: "$1.800.000",
+                        discountedPrice: "$1.760.000",
+                        images: [
+                            "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-255G7.jpg",
+                            "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-1-255G7.jpg",
+                            "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-2-255G7.jpg",
+                            "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-3-255G7.jpg",
+                            "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-4-255G7.jpg",
+                            "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-5-255G7.jpg"
+                        ],
+                        specs: {
+                            processor: "CoreI5",
+                            ram: "8Gb",
+                            storage: "512Gb",
+                            screen: "15\""
+                        }
+                    },
+                    {
+                        title: "Portátil HP 255G7",
+                        brand: "HP",
+                        model: "255G7",
+                        discount: "13%",
+                        price: "$1.800.000",
+                        discountedPrice: "$1.760.000",
+                        images: [
+                            "../images/ImagenesProductos/Portatiles/Hp/255G7/170058000-1- 255G7.jpg",
+                            "../images/ImagenesProductos/Portatiles/Hp/240G7/170058000- 255G7.jpg",
+                            "../images/ImagenesProductos/Portatiles/Hp/240G7/170058000-4- 255G7.jpg",
+                            "../images/ImagenesProductos/Portatiles/Hp/240G7/170058000-2- 255G7.jpg",
+                            "../images/ImagenesProductos/Portatiles/Hp/240G7/170058000-3- 255G7.jpg",
+                        ],
+                        specs: {
+                            processor: "CoreI5",
+                            ram: "8Gb",
+                            storage: "512Gb",
+                            screen: "15\""
+                        }
+                    },
+                    {
+                        title: "Portátil HP 240G7",
+                        brand: "HP",
+                        model: "240G7",
+                        discount: "13%",
+                        price: "$1.800.000",
+                        discountedPrice: "$1.760.000",
+                        images: [
+                            "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-255G7.jpg",
+                            "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-1-255G7.jpg",
+                            "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-2-255G7.jpg",
+                            "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-3-255G7.jpg",
+                            "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-4-255G7.jpg",
+                            "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-5-255G7.jpg"
+                        ],
+                        specs: {
+                            processor: "CoreI5",
+                            ram: "8Gb",
+                            storage: "512Gb",
+                            screen: "15\""
+                        }
+                    },
+                    {
+                        title: "Portátil HP 240G7",
+                        brand: "HP",
+                        model: "240G7",
+                        discount: "13%",
+                        price: "$1.800.000",
+                        discountedPrice: "$1.760.000",
+                        images: [
+                            "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-255G7.jpg",
+                            "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-1-255G7.jpg",
+                            "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-2-255G7.jpg",
+                            "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-3-255G7.jpg",
+                            "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-4-255G7.jpg",
+                            "../images/ImagenesProductos/Portatiles/Hp/240G7/168868000-5-255G7.jpg"
+                        ],
+                        specs: {
+                            processor: "CoreI5",
+                            ram: "8Gb",
+                            storage: "512Gb",
+                            screen: "15\""
+                        }
+                    },
+                    // Agrega más productos aquí
+                ],
+                gamer: [
+                    {
+                        title: "Portátil PAVILION 15-DK0001LA",
+                        brand: "HP",
+                        model: "PAVILION 15-DK0001LA",
+                        discount: "10%",
+                        price: "$2.500.000",
+                        discountedPrice: "$2.250.000",
+                        images: [
+                            "../images/ImagenesProductos/Portatiles/Hp/PAVILION 15-DK0001LA/193905279975.webp",
+                            "../images/ImagenesProductos/Portatiles/Hp/PAVILION 15-DK0001LA/"
+                        ],
+                        specs: {
+                            processor: "CoreI7",
+                            ram: "16Gb",
+                            storage: "1Tb SSD",
+                            screen: "17\""
+                        }
+                    },
+                    {
+                        title: "Portátil Gamer ASUS",
+                        brand: "ASUS",
+                        model: "ROG Strix",
+                        discount: "10%",
+                        price: "$2.500.000",
+                        discountedPrice: "$2.250.000",
+                        images: [
+                            "../images/ImagenesProductos/Gamer/Asus/ROGStrix1.jpg",
+                            "../images/ImagenesProductos/Gamer/Asus/ROGStrix2.jpg",
+                            "../images/ImagenesProductos/Gamer/Asus/ROGStrix3.jpg"
+                        ],
+                        specs: {
+                            processor: "CoreI7",
+                            ram: "16Gb",
+                            storage: "1Tb SSD",
+                            screen: "17\""
+                        }
+                    },
+                    {
+                        title: "Portátil Gamer ASUS",
+                        brand: "ASUS",
+                        model: "ROG Strix",
+                        discount: "10%",
+                        price: "$2.500.000",
+                        discountedPrice: "$2.250.000",
+                        images: [
+                            "../images/ImagenesProductos/Gamer/Asus/ROGStrix1.jpg",
+                            "../images/ImagenesProductos/Gamer/Asus/ROGStrix2.jpg",
+                            "../images/ImagenesProductos/Gamer/Asus/ROGStrix3.jpg"
+                        ],
+                        specs: {
+                            processor: "CoreI7",
+                            ram: "16Gb",
+                            storage: "1Tb SSD",
+                            screen: "17\""
+                        }
+                    },
+                    {
+                        title: "Portátil Gamer ASUS",
+                        brand: "ASUS",
+                        model: "ROG Strix",
+                        discount: "10%",
+                        price: "$2.500.000",
+                        discountedPrice: "$2.250.000",
+                        images: [
+                            "../images/ImagenesProductos/Gamer/Asus/ROGStrix1.jpg",
+                            "../images/ImagenesProductos/Gamer/Asus/ROGStrix2.jpg",
+                            "../images/ImagenesProductos/Gamer/Asus/ROGStrix3.jpg"
+                        ],
+                        specs: {
+                            processor: "CoreI7",
+                            ram: "16Gb",
+                            storage: "1Tb SSD",
+                            screen: "17\""
+                        }
+                    },
+                    // Agrega más productos aquí
+                ],
+                vendidos: [
+                    {
+                        title: "Portátil PAVILION15-CW1004LA",
+                        brand: "HP",
+                        model: "PAVILION15-CW1004LA",
+                        discount: "15%",
+                        price: "$1.200.000",
+                        discountedPrice: "$1.020.000",
+                        images: [
+                            "../images/ImagenesProductos/Portatiles/Hp/PAVILION15-CW1004LA/170008000_PAVILION 15.jpg",
+                            "../images/ImagenesProductos/Portatiles/Lenovo/IdeaPad32.jpg"
+                        ],
+                        specs: {
+                            processor: "CoreI3",
+                            ram: "4Gb",
+                            storage: "1Tb",
+                            screen: "14\""
+                        }
+                    },
+                    {
+                        title: "Portátil Lenovo IdeaPad",
+                        brand: "Lenovo",
+                        model: "IdeaPad 3",
+                        discount: "15%",
+                        price: "$1.200.000",
+                        discountedPrice: "$1.020.000",
+                        images: [
+                            "../images/ImagenesProductos/Portatiles/Lenovo/IdeaPad31.jpg",
+                            "../images/ImagenesProductos/Portatiles/Lenovo/IdeaPad32.jpg"
+                        ],
+                        specs: {
+                            processor: "CoreI3",
+                            ram: "4Gb",
+                            storage: "1Tb",
+                            screen: "14\""
+                        }
+                    },
+                    {
+                        title: "Portátil Lenovo IdeaPad",
+                        brand: "Lenovo",
+                        model: "IdeaPad 3",
+                        discount: "15%",
+                        price: "$1.200.000",
+                        discountedPrice: "$1.020.000",
+                        images: [
+                            "../images/ImagenesProductos/Portatiles/Lenovo/IdeaPad31.jpg",
+                            "../images/ImagenesProductos/Portatiles/Lenovo/IdeaPad32.jpg"
+                        ],
+                        specs: {
+                            processor: "CoreI3",
+                            ram: "4Gb",
+                            storage: "1Tb",
+                            screen: "14\""
+                        }
+                    },
+                    {
+                        title: "Portátil Lenovo IdeaPad",
+                        brand: "Lenovo",
+                        model: "IdeaPad 3",
+                        discount: "15%",
+                        price: "$1.200.000",
+                        discountedPrice: "$1.020.000",
+                        images: [
+                            "../images/ImagenesProductos/Portatiles/Lenovo/IdeaPad31.jpg",
+                            "../images/ImagenesProductos/Portatiles/Lenovo/IdeaPad32.jpg"
+                        ],
+                        specs: {
+                            processor: "CoreI3",
+                            ram: "4Gb",
+                            storage: "1Tb",
+                            screen: "14\""
+                        }
+                    },
+                    {
+                        title: "Portátil Lenovo IdeaPad",
+                        brand: "Lenovo",
+                        model: "IdeaPad 3",
+                        discount: "15%",
+                        price: "$1.200.000",
+                        discountedPrice: "$1.020.000",
+                        images: [
+                            "../images/ImagenesProductos/Portatiles/Lenovo/IdeaPad31.jpg",
+                            "../images/ImagenesProductos/Portatiles/Lenovo/IdeaPad32.jpg"
+                        ],
+                        specs: {
+                            processor: "CoreI3",
+                            ram: "4Gb",
+                            storage: "1Tb",
+                            screen: "14\""
+                        }
+                    },
 
-                // Agrega más productos aquí
-            ],
-            usados: [
-                {
-                    title: "Portátil Dell Latitude",
-                    brand: "Dell",
-                    model: "Latitude E7440",
-                    discount: "5%",
-                    price: "$800.000",
-                    discountedPrice: "$760.000",
-                    images: [
-                        "../images/ImagenesProductos/Usados/Dell/LatitudeE74401.jpg",
-                        "../images/ImagenesProductos/Usados/Dell/LatitudeE74402.jpg"
-                    ],
-                    specs: {
-                        processor: "CoreI5",
-                        ram: "8Gb",
-                        storage: "256Gb SSD",
-                        screen: "14\""
-                    }
-                },
-                {
-                    title: "Portátil Dell Latitude",
-                    brand: "Dell",
-                    model: "Latitude E7440",
-                    discount: "5%",
-                    price: "$800.000",
-                    discountedPrice: "$760.000",
-                    images: [
-                        "../images/ImagenesProductos/Usados/Dell/LatitudeE74401.jpg",
-                        "../images/ImagenesProductos/Usados/Dell/LatitudeE74402.jpg"
-                    ],
-                    specs: {
-                        processor: "CoreI5",
-                        ram: "8Gb",
-                        storage: "256Gb SSD",
-                        screen: "14\""
-                    }
-                },
-                {
-                    title: "Portátil Dell Latitude",
-                    brand: "Dell",
-                    model: "Latitude E7440",
-                    discount: "5%",
-                    price: "$800.000",
-                    discountedPrice: "$760.000",
-                    images: [
-                        "../images/ImagenesProductos/Usados/Dell/LatitudeE74401.jpg",
-                        "../images/ImagenesProductos/Usados/Dell/LatitudeE74402.jpg"
-                    ],
-                    specs: {
-                        processor: "CoreI5",
-                        ram: "8Gb",
-                        storage: "256Gb SSD",
-                        screen: "14\""
-                    }
-                },
-                {
-                    title: "Portátil Dell Latitude",
-                    brand: "Dell",
-                    model: "Latitude E7440",
-                    discount: "5%",
-                    price: "$800.000",
-                    discountedPrice: "$760.000",
-                    images: [
-                        "../images/ImagenesProductos/Usados/Dell/LatitudeE74401.jpg",
-                        "../images/ImagenesProductos/Usados/Dell/LatitudeE74402.jpg"
-                    ],
-                    specs: {
-                        processor: "CoreI5",
-                        ram: "8Gb",
-                        storage: "256Gb SSD",
-                        screen: "14\""
-                    }
-                },
-                {
-                    title: "Portátil Dell Latitude",
-                    brand: "Dell",
-                    model: "Latitude E7440",
-                    discount: "5%",
-                    price: "$800.000",
-                    discountedPrice: "$760.000",
-                    images: [
-                        "../images/ImagenesProductos/Usados/Dell/LatitudeE74401.jpg",
-                        "../images/ImagenesProductos/Usados/Dell/LatitudeE74402.jpg"
-                    ],
-                    specs: {
-                        processor: "CoreI5",
-                        ram: "8Gb",
-                        storage: "256Gb SSD",
-                        screen: "14\""
-                    }
-                },
-                // Agrega más productos aquí
-            ]
-        };
+                    // Agrega más productos aquí
+                ],
+                usados: [
+                    {
+                        title: "Portátil Dell Latitude",
+                        brand: "Dell",
+                        model: "Latitude E7440",
+                        discount: "5%",
+                        price: "$800.000",
+                        discountedPrice: "$760.000",
+                        images: [
+                            "../images/ImagenesProductos/Usados/Dell/LatitudeE74401.jpg",
+                            "../images/ImagenesProductos/Usados/Dell/LatitudeE74402.jpg"
+                        ],
+                        specs: {
+                            processor: "CoreI5",
+                            ram: "8Gb",
+                            storage: "256Gb SSD",
+                            screen: "14\""
+                        }
+                    },
+                    {
+                        title: "Portátil Dell Latitude",
+                        brand: "Dell",
+                        model: "Latitude E7440",
+                        discount: "5%",
+                        price: "$800.000",
+                        discountedPrice: "$760.000",
+                        images: [
+                            "../images/ImagenesProductos/Usados/Dell/LatitudeE74401.jpg",
+                            "../images/ImagenesProductos/Usados/Dell/LatitudeE74402.jpg"
+                        ],
+                        specs: {
+                            processor: "CoreI5",
+                            ram: "8Gb",
+                            storage: "256Gb SSD",
+                            screen: "14\""
+                        }
+                    },
+                    {
+                        title: "Portátil Dell Latitude",
+                        brand: "Dell",
+                        model: "Latitude E7440",
+                        discount: "5%",
+                        price: "$800.000",
+                        discountedPrice: "$760.000",
+                        images: [
+                            "../images/ImagenesProductos/Usados/Dell/LatitudeE74401.jpg",
+                            "../images/ImagenesProductos/Usados/Dell/LatitudeE74402.jpg"
+                        ],
+                        specs: {
+                            processor: "CoreI5",
+                            ram: "8Gb",
+                            storage: "256Gb SSD",
+                            screen: "14\""
+                        }
+                    },
+                    {
+                        title: "Portátil Dell Latitude",
+                        brand: "Dell",
+                        model: "Latitude E7440",
+                        discount: "5%",
+                        price: "$800.000",
+                        discountedPrice: "$760.000",
+                        images: [
+                            "../images/ImagenesProductos/Usados/Dell/LatitudeE74401.jpg",
+                            "../images/ImagenesProductos/Usados/Dell/LatitudeE74402.jpg"
+                        ],
+                        specs: {
+                            processor: "CoreI5",
+                            ram: "8Gb",
+                            storage: "256Gb SSD",
+                            screen: "14\""
+                        }
+                    },
+                    {
+                        title: "Portátil Dell Latitude",
+                        brand: "Dell",
+                        model: "Latitude E7440",
+                        discount: "5%",
+                        price: "$800.000",
+                        discountedPrice: "$760.000",
+                        images: [
+                            "../images/ImagenesProductos/Usados/Dell/LatitudeE74401.jpg",
+                            "../images/ImagenesProductos/Usados/Dell/LatitudeE74402.jpg"
+                        ],
+                        specs: {
+                            processor: "CoreI5",
+                            ram: "8Gb",
+                            storage: "256Gb SSD",
+                            screen: "14\""
+                        }
+                    },
+                    // Agrega más productos aquí
+                ]
+            };
 
-        function renderProducts(category) {
-            const productsOferts = productsData[Ofersts];
-            productsList.innerHTML = "";
+            function renderProducts(category) {
+                const productsOferts = productsData[Ofersts];
+                productsList.innerHTML = "";
 
-            products.forEach((product, index) => {
-                const productHTML = `
+                products.forEach((product, index) => {
+                    const productHTML = `
                 <article class="card-product">
                     <h3 class="title-product">${product.title}</h3>
                     <p class="brand-model">
@@ -1653,50 +1822,50 @@
                     <button type="button" class="add-cart">Agregar</button>
                 </article>
             `;
-                productsList.innerHTML += productHTML;
+                    productsList.innerHTML += productHTML;
 
-                // Inicia la rotación de imágenes para cada producto
-                startImageRotation(product, index);
+                    // Inicia la rotación de imágenes para cada producto
+                    startImageRotation(product, index);
+                });
+            }
+
+            function startImageRotation(product, productIndex) {
+                const imgElement = productsList.querySelector(`.products-img[data-product-index="${productIndex}"]`);
+                let currentImageIndex = 0;
+                const totalImages = product.images.length;
+
+                setInterval(() => {
+                    currentImageIndex = (currentImageIndex + 1) % totalImages; // Cambia al siguiente índice
+                    imgElement.src = product.images[currentImageIndex]; // Cambia la imagen
+                }, 7000); // Cambia cada 7 segundos
+            }
+
+            menuOptions.forEach(option => {
+                option.addEventListener("click", function (e) {
+                    e.preventDefault();
+
+                    // Elimina la clase 'active' de todas las opciones
+                    menuOptions.forEach(opt => opt.classList.remove("active"));
+
+                    // Agrega la clase 'active' a la opción seleccionada
+                    option.classList.add("active");
+
+                    // Renderiza los productos de la categoría seleccionada
+                    const category = option.getAttribute("data-category");
+                    renderProducts(category);
+                });
             });
-        }
 
-        function startImageRotation(product, productIndex) {
-            const imgElement = productsList.querySelector(`.products-img[data-product-index="${productIndex}"]`);
-            let currentImageIndex = 0;
-            const totalImages = product.images.length;
-
-            setInterval(() => {
-                currentImageIndex = (currentImageIndex + 1) % totalImages; // Cambia al siguiente índice
-                imgElement.src = product.images[currentImageIndex]; // Cambia la imagen
-            }, 7000); // Cambia cada 7 segundos
-        }
-
-        menuOptions.forEach(option => {
-            option.addEventListener("click", function (e) {
-                e.preventDefault();
-
-                // Elimina la clase 'active' de todas las opciones
-                menuOptions.forEach(opt => opt.classList.remove("active"));
-
-                // Agrega la clase 'active' a la opción seleccionada
-                option.classList.add("active");
-
-                // Renderiza los productos de la categoría seleccionada
-                const category = option.getAttribute("data-category");
-                renderProducts(category);
-            });
+            // Mostrar la categoría inicial (Destacados)
+            renderProducts("destacados");
         });
 
-        // Mostrar la categoría inicial (Destacados)
-        renderProducts("destacados");
-    });
-
-</script>
-<!-- END CODIGO PARA PRODUCTOS EM OFERTA 12 DE OCTUBRE-->
+    </script>
+    <!-- END CODIGO PARA PRODUCTOS EM OFERTA 12 DE OCTUBRE-->
 
 
 
-<!--<script>
+    <!--<script>
     document.addEventListener("DOMContentLoaded", function () {
         const menuOptions = document.querySelectorAll(".menu-options li");
         const productsList = document.getElementById("products-list");
@@ -1886,7 +2055,7 @@
     });
 </script>-->
 
-<!--<script>
+    <!--<script>
     document.addEventListener("DOMContentLoaded", function () {
         const menuOptions = document.querySelectorAll(".menu-options li");
         const productsList = document.getElementById("products-list");
@@ -2113,7 +2282,7 @@
 
 
 </script>-->
-<!--<script>
+    <!--<script>
     document.addEventListener("DOMContentLoaded", function () {
         const menuOptions = document.querySelectorAll(".menu-options li");
         const productsList = document.getElementById("products-list");
